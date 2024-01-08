@@ -1,2 +1,0 @@
-# PokemonReviewApp
- Pokemon Review App
