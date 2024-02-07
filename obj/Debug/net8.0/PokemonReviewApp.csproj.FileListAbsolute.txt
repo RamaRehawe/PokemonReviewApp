@@ -135,3 +135,4 @@ C:\PokemonReviewApp\PokemonReviewApp\bin\Debug\net8.0\PokemonReviewApp.runtimeco
 C:\PokemonReviewApp\PokemonReviewApp\bin\Debug\net8.0\PokemonReviewApp.pdb
 C:\PokemonReviewApp\PokemonReviewApp\obj\Debug\net8.0\PokemonReviewApp.genruntimeconfig.cache
 C:\PokemonReviewApp\PokemonReviewApp\obj\Debug\net8.0\ref\PokemonReviewApp.dll
+C:\PokemonReviewApp\PokemonReviewApp\bin\Debug\net8.0\AutoMapper.dll

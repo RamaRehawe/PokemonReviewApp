@@ -2,6 +2,23 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.25.0": {
         "type": "package",
         "dependencies": {
@@ -318,7 +335,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -1568,6 +1585,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.0": {
+      "sha512": "BFMiZ5kNqbN1ircgFE7qtXWzGjGf1UnEPo39dWlvaPFVep75cikyjFCFssthj9l2ZC4OkeG4vXIgMTApnedSNg==",
+      "type": "package",
+      "path": "automapper/13.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.25.0": {
       "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "type": "package",
@@ -2076,10 +2108,10 @@
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2092,6 +2124,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -2101,7 +2134,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -4435,6 +4468,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AutoMapper >= 13.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.1",
@@ -4480,6 +4514,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
